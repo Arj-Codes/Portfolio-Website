@@ -47,19 +47,25 @@
   justify-content: space-around;
 }
 .icons{
-  margin-left:160px;
-  margin-top: 10px;
+  top: 280px;
+  left:160px;
+  position: absolute;
   display: flex;
+  display:none;
+  z-index: 10;
   /* background-color:aqua; */
   width:60px;
-  /* align-items: center; */
-  justify-content: center;
+  justify-content: center;  
+}
+.myPic{
+  /* background-color: aqua; */
+  position: relative;
 }
 
 
 .myPic .git{
-width:40px;
-height:40px;
+  width:40px;
+  height:40px;
 border-radius:30px;
 padding:10px;
 }
@@ -71,11 +77,19 @@ padding:10px;
   transition: transform 0.5s;
 }
 
-.myPic img:hover{
+.myPic img:hover {
   opacity: 0.7;
   cursor: pointer;
   transform : scale(1.1);
 }
+.icons:hover{
+  display: flex;
+}
+.myPic img:hover +.icons{
+  display: flex;
+  cursor: pointer;
+}
+
 .myInfo {
   display: flex;
   align-items: center;
@@ -133,6 +147,7 @@ padding:10px;
 }
 .contactForm {
   font-family: "Fira Sans", sans-serif;
+  background-color:rgb(255, 255, 255);
 }
 .contactForm h1,h3 {
   font-family: "Source Code Pro", monospace;
@@ -316,6 +331,7 @@ width:170px;
   font-family: "Fira Sans", sans-serif;  
 }
 .me p{
+  margin-top: 10px;
   font-family: "Source Code Pro", monospace;
   font-weight: 900;
 }
@@ -323,6 +339,9 @@ width:170px;
   font-family: "Fira Sans", sans-serif;
   margin-left:350px;
   /* background-color: aqua; */
+}
+.me{
+  width:1280px;
 }
 .projects2 p{
   font-family: "Source Code Pro", monospace;
@@ -375,9 +394,80 @@ html{
   background-color:#edf2f8;
   width: 100%;
 }
-body{
-  overflow:hidden;
+@media (max-width:1535px){
+  .sidebar{
+    transform:translate(-443px,0px);
+    position:absolute;
+  }
+  .info{
+    margin-left:180px;
+    margin-top:20px;
+    /* background-color:aqua; */
+    display:flex;
+    flex-wrap: wrap;
+    position: absolute;
+  }
+  .info img{
+    /* position: absolute; */
+    width: 450px;
+    height:400px;
+  }
 }
+.skills2{
+ display:flex;
+ flex-direction:row;
+ /* background-color:aqua;   */
+}
+.skill2{
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius:10px;
+  padding:30px;
+  margin:30px;
+  transition: transform 0.6s;
+  background-color:white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill2:hover{
+  transform:scale(1.1);
+  box-shadow: 0 5px 5px rgba(65, 64, 64, 0.8);
+}
+.skilltitle{
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 90px;
+  text-align:center;
+}
+.skills2 img{
+  margin-top:5px;
+  width:100px;
+  height:100px;
+}
+.skills2 .a{
+  width:270px;
+}
+h6{
+  margin-top:9px;
+}
+.cv img{
+  border-radius:60px;
+  width:1200px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  padding:30px 10px 30px 60px;
+  
+}
+.cv{ 
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height:100vh;
+}
+
+
 
 
 
