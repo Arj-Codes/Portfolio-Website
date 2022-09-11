@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -462,10 +463,40 @@ h6{
   
 }
 .cv{ 
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   scroll-behavior: smooth;
   height:100vh;
 }
+.downloadicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 1200px;
+  border: 1px solid black;
+  width:90px;
+  height:25px;
+  font-family: "Fira Sans", sans-serif;
+  background-color:white;
+  border-radius:10px; 
+  transition: transform 0.5s;
+}
+.downloadicon:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color:black;
+  color:white;
+}
+
+.downloadicon a{
+  text-decoration: none;
+  color:black;
+}
+
+.downloadicon a:hover{
+  color:white;
+}
+
 
 
 
