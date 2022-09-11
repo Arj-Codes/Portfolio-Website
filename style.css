@@ -17,13 +17,20 @@
   font-size: 20px;
   list-style: none;
   padding: 30px 5px;
+  transition: transform 0.4s;
 }
+.sidebar nav li:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+} 
+
 .sidebar nav li a {
+  /* background-color: blue; */
   text-decoration: none;
   color: white;
 }
 .main {
-  /* background-color: lightgreen; */
+  background-color:#edf2f8;
   width: 86%;
   height: 100vh;
 }
@@ -39,11 +46,35 @@
   display: flex;
   justify-content: space-around;
 }
+.icons{
+  margin-left:160px;
+  margin-top: 10px;
+  display: flex;
+  /* background-color:aqua; */
+  width:60px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+.myPic .git{
+width:40px;
+height:40px;
+border-radius:30px;
+padding:10px;
+}
 .myPic img {
   height: 50vh;
   width: 24vw;
   display: flex;
   align-items: center;
+  transition: transform 0.5s;
+}
+
+.myPic img:hover{
+  opacity: 0.7;
+  cursor: pointer;
+  transform : scale(1.1);
 }
 .myInfo {
   display: flex;
@@ -282,41 +313,70 @@ width:170px;
   margin-left: 33px;
 }
 .me h1{
-  font-family: "Fira Sans", sans-serif;;  
+  font-family: "Fira Sans", sans-serif;  
 }
 .me p{
   font-family: "Source Code Pro", monospace;
   font-weight: 900;
 }
 .projects2 h1{
-  margin-left:400px;
+  font-family: "Fira Sans", sans-serif;
+  margin-left:350px;
   /* background-color: aqua; */
 }
 .projects2 p{
+  font-family: "Source Code Pro", monospace;
   margin-top:30px;
-  margin-left:280px;
+  margin-left:170px;
+  font-weight: bold;
   /* background-color:aqua; */
   font-size:30px;
 }
+.projects2{
+  
+  margin-top:100px;
+}
 .proj{
-  margin:60px 210px;
+  margin:60px 60px;
   display:flex;
   /* background-color: aqua; */
 }
 .projImg img{
-  margin:10px 0px;
+  margin:30px 13px;
   width:100px;
   height:100px;
-  transition:transform 0.4s;
   /* background-color: aqua; */
 }
 .projImg img:hover{
   cursor: pointer;
-  transform: scale(1.2);
 }
 .proj1{
+  margin:10px;
   padding:10px 50px;
-  /* border: 1px solid black; */
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius:10px;
+  transition: transform 0.6s;
+  background-color:white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  /* transition: box-shadow 0.3s ease-in-out; */
+}
+.proj1:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+  box-shadow: 0 5px 5px rgba(65, 64, 64, 0.8);
+}
+html{
+  scroll-behavior: smooth;
+}
+.container{
+  background-color:#edf2f8;
+  width: 100%;
+}
+body{
+  overflow:hidden;
 }
 
 
