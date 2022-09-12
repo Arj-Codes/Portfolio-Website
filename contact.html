@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" class="css">
   <title>Contact me</title>
+
+  <script>
+
+    function ValidateFirstName ( )
+    {
+       alert('First name')
+    }
+    
+    </script>
 </head>
 <body>
   <div class="container">
@@ -24,7 +33,7 @@
       <div class="contactForm">
         <h1>Share your contact information</h1>
         <h3>For work/general inquiries</h3>
-        <form>
+        <form id="contact-form" onsubmit="return ValidateFirstName();">
           <div class="mb-3">
             <label for="Email1" class="form-label">Email address : </label>
             <input type="email" class="form-control" id="Email1">
@@ -37,7 +46,7 @@
             <label class="form-check-label" for="Check1">To work with me click on the checkbox! </label>
             <input type="checkbox" class="form-check-input" id="Check1">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary contact-btn">Submit</button>
         </form>
       </div>
     </div>

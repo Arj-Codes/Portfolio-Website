@@ -6,7 +6,8 @@
   padding: 0;
 }
 .sidebar {
-  background-color: rgb(0, 149, 255);
+  /* background-color: rgb(0, 149, 255); */
+  background-image: linear-gradient(to bottom right,rgb(0, 149, 255),aqua);
   width: 14%;
   font-family: "Fira Sans", sans-serif;
   height: 100vh;
@@ -15,6 +16,7 @@
   padding: 30px;
 }
 .sidebar nav li {
+  font-weight: bold;
   font-size: 20px;
   list-style: none;
   padding: 30px 5px;
@@ -106,6 +108,11 @@ padding:10px;
   font-family: "Fira Sans", sans-serif;
   padding-bottom: 10px;
 }
+.name h4{
+  background : -webkit-linear-gradient(aqua,blue);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 .about {
   padding-bottom: 10px;
   font-size: 30px;
@@ -118,6 +125,7 @@ padding:10px;
   border-radius: 20px;
   color: white;
   background-color: rgb(0, 149, 255);
+  /* background-image:linear-gradient(to bottom right,rgba(0,149,255),aqua); */
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
@@ -133,6 +141,7 @@ padding:10px;
   padding: 10px;
 }
 .button button:hover {
+  
   background-color: white;
   color: rgb(0, 149, 255) !important;
 }
@@ -148,7 +157,8 @@ padding:10px;
 }
 .contactForm {
   font-family: "Fira Sans", sans-serif;
-  background-color:rgb(255, 255, 255);
+  /* background-color:rgb(255, 255, 255); */
+  background:linear-gradient(to bottom right,aqua,rgb(0, 149, 255));
 }
 .contactForm h1,h3 {
   font-family: "Source Code Pro", monospace;
@@ -157,6 +167,7 @@ padding:10px;
 .contactForm{
   /* background-color:lightblue; */
   border: 2px solid black;
+  border-radius: 15px;
   margin : 100px 30px;
   padding : 10px;
   
@@ -170,6 +181,14 @@ form div{
  }
 .mb-3 input{
   margin-top:10px;
+}
+.mb-3,.mb-4{
+  margin-left:430px;
+  margin-bottom:10px;
+  margin-top:20px;
+  background-color:white;
+  border: 2px solid white;
+  border-radius: 15px;
 }
 form .mb-4{
 padding : 10px;
@@ -216,7 +235,7 @@ form button:hover{
     padding-right: 90px;
     padding-bottom: 10px;
   }
-  .webTitle{
+  .webppe{
     margin-top: 10px;
     font-size:30px; 
   }
@@ -335,6 +354,7 @@ width:170px;
   margin-top: 10px;
   font-family: "Source Code Pro", monospace;
   font-weight: 900;
+  font-size: 20px;
 }
 .projects2 h1{
   font-family: "Fira Sans", sans-serif;
@@ -342,6 +362,7 @@ width:170px;
   /* background-color: aqua; */
 }
 .me{
+  /* background-color:red; */
   width:1280px;
 }
 .projects2 p{
@@ -495,6 +516,47 @@ h6{
 
 .downloadicon a:hover{
   color:white;
+}
+
+
+.proj2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  margin:10px;
+  padding:10px 40px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius:10px;
+  transition: transform 0.6s;
+  background-color:white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  /* transition: box-shadow 0.3s ease-in-out; */
+}
+.proj2:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+  box-shadow: 0 5px 5px rgba(65, 64, 64, 0.8);
+}
+.projects2 h1{
+  font-family: "Fira Sans", sans-serif;
+  margin-left:350px;
+  /* background-color: aqua; */
+}
+.titles2{
+  /* background-color:red; */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.titles2 .t2{
+  margin-left:0px;
+  width:410px;
 }
 
 
